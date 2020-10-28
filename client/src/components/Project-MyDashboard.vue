@@ -1,7 +1,7 @@
 <template>
 	<v-card elevation=5>
 		<v-card-title class="text-h4 font-weight-bold">
-			{{ this.items.title }} (Currently In Progress)
+			{{ this.items.title }}
 			<v-spacer></v-spacer>
 			<v-btn
 				href="https://glacial-hamlet-38268.herokuapp.com/"
