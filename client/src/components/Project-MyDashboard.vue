@@ -69,12 +69,15 @@
 					<v-col
 						cols=12
 						lg=5
+						align-self="center"
 					>
 						<v-card-subtitle class="text-h6">
 							{{ item.subheader }}
 						</v-card-subtitle>
 						<v-card-text class="text-body-2">
+							<div class="align-center">
 							{{ item.text }}
+							</div>
 						</v-card-text>
 					</v-col>
 					<v-col cols=12
