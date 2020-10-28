@@ -64,32 +64,35 @@
 				v-for="(item, i) in this.items.implementation"
 				:key="item.subheader"
 				class="ma-1"
-				justify="space-around">
-					<v-col cols=12
-					md=5
+				justify="space-around"
+			>
+					<v-col
+						cols=12
+						lg=5
 					>
-				<v-card-subtitle class="text-h6">
-					{{ item.subheader }}
-				</v-card-subtitle>
-				<v-card-text class="text-body-2">
-					{{ item.text }}
-				</v-card-text>
+						<v-card-subtitle class="text-h6">
+							{{ item.subheader }}
+						</v-card-subtitle>
+						<v-card-text class="text-body-2">
+							{{ item.text }}
+						</v-card-text>
 					</v-col>
-				<v-col cols=12
-					md=7
+					<v-col cols=12
+						lg=7
+						align-self="center"
 					>
-				<div
-					class="d-flex justify-space-around"
-				>
-					<img :width="item.width" :src="item.image" alt="" />
-				</div>
-				</v-col>
-				<v-divider
-					inset
-					v-if="i < (items.implementation.length - 1)"
-					class="mx-1"
-				>
-				</v-divider>
+						<div
+							class="d-flex justify-center"
+						>
+							<img :width="item.width" :src="item.image" alt="" />
+						</div>
+					</v-col>
+					<v-divider
+						inset
+						v-if="i < (items.implementation.length - 1)"
+						class="mx-1"
+					>
+					</v-divider>
 			</v-row>
 				<v-card-subtitle class="text-h5 text-uppercase font-weight-bold">
 					Future Work

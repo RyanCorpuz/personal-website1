@@ -6,18 +6,12 @@
 		</div>
 		<v-row justify="center">
 			<v-col
-				cols="12"
-				sm="12"
-				md="10"
-				lg="8"
+				cols="11"
 			>
 				<TrackingCam /> 
 			</v-col>
 			<v-col
-				cols="12"
-				sm="12"
-				md="10"
-				lg="8"
+				cols="11"
 			>
 				<MyDashboard /> 
 			</v-col>
