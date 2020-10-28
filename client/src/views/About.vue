@@ -15,12 +15,12 @@
 				cols="12"
 				md="8"
 				align="left">
-				<div class="greeting ma-4 text-center text-h3 font-weight-regular"
+				<div class="greeting text-center text-h3 font-weight-regular"
 				>
 					Who Am I?
 				</div>
 				<div 
-					class="maintext ma-4 text-body-1 font-weight-regular"
+					class="maintext ma-5 text-justify text-body-1 font-weight-regular"
 					v-for="item in items"
 					:key="item.text"
 				>

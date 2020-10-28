@@ -1,5 +1,5 @@
 <template>
-	<v-card elevation=5>
+	<v-card elevation=5 class="text-justify">
 		<v-card-title class="text-h4 font-weight-bold">
 			{{ this.items.title }}
 			<v-spacer></v-spacer>
@@ -49,7 +49,7 @@
 		<v-expand-transition>
 			<div v-show="show">
 				<div class="d-flex pt-5 justify-space-around">
-					<!-- <img width="35%" src="https://i.imgur.com/k0HsudF.jpg" alt="" /> -->
+					<img width="85%" src="https://i.imgur.com/y6xzIPK.png" alt="" />
 				</div>
 				<v-card-subtitle class="text-h5 text-uppercase font-weight-bold">
 					Motivation	
@@ -60,17 +60,37 @@
 				<v-card-subtitle class="text-h5 text-uppercase font-weight-bold">
 					Implementation	
 				</v-card-subtitle>
-				<div
-					v-for="item in this.items.implementation"
-					:key="item.subheader"
+			<v-row
+				v-for="(item, i) in this.items.implementation"
+				:key="item.subheader"
+				class="ma-1"
+				justify="space-around">
+					<v-col cols=12
+					md=5
 					>
-					<v-card-subtitle class="text-h6">
-						{{ item.subheader }}
-					</v-card-subtitle>
-					<v-card-text class="text-body-2">
-						{{ item.text }}
-					</v-card-text>
+				<v-card-subtitle class="text-h6">
+					{{ item.subheader }}
+				</v-card-subtitle>
+				<v-card-text class="text-body-2">
+					{{ item.text }}
+				</v-card-text>
+					</v-col>
+				<v-col cols=12
+					md=7
+					>
+				<div
+					class="d-flex justify-space-around"
+				>
+					<img :width="item.width" :src="item.image" alt="" />
 				</div>
+				</v-col>
+				<v-divider
+					inset
+					v-if="i < (items.implementation.length - 1)"
+					class="mx-1"
+				>
+				</v-divider>
+			</v-row>
 				<v-card-subtitle class="text-h5 text-uppercase font-weight-bold">
 					Future Work
 				</v-card-subtitle>
@@ -104,6 +124,17 @@ export default {
 			}
 		],
 	}),
+	computer: {
+		width() {
+			switch(this.$vuetify.breakpoint.name) {
+				case 'xs': return 220
+				case 'sm': return 400
+				case 'md': return 500
+				case 'lg': return 800
+				case 'xl': return '40%'
+			}
+		}
+	}
 }
 </script>
 <style scoped>

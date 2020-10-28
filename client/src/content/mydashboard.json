@@ -1,18 +1,24 @@
 {
 	"title": "My Dashboard",
 	"overview": "Developed and implemented a personal management software for managing and organizing my life. Using web technologies, I implement various applications in one place to have everything I need in my day-to-day workflow centralized and convenient.",
-	"motivation": "I am continually searching for new, creative, and personalized ways to enhance my organization systems and I figured that as someone who enjoys technology and software, why not make applications that are personalized for myself. So I have been working on developing my own personal life management system to organize the information in my life and present it in ways that are useful and constructive to me. Also this is an opportunity for me to collect and analyze my own data to explore ways to use this data to my benefit.",
+	"motivation": "I am always searching for new, creative, and personalized ways to enhance my organization systems and I figured that as someone who enjoys technology and software, why not make applications that are personalized for myself. So I have been working on developing my own personal life management system to organize the information in my life and present it in ways that are useful and constructive to me. Also this is an opportunity for me to collect and analyze my own data to explore ways to use this data to my benefit.",
 	"implementation": [
 		{
 			"subheader": "Clock",
+			"image": "https://i.imgur.com/jdGY5xg.gif",
+			"width": "65%",
 			"text": "Implemented a clock app that acts as a digital clock and displays various other time representations. The purpose of this is to experiment with types of visual time representations that improve my time management. This includes a countup timer from the start of the day, a countdown timer to the end of the day, and a linear progress bar representing the current percentage of the day that has elapsed. The start and end of day values can be changed and are currently set to when I wake up and when I go to sleep respectively."
 		},
 		{
 			"subheader": "Event Tracker",
+			"image": "https://i.imgur.com/SgrJzsl.gif",
+			"width": "55%",
 			"text": "Implemented a list application used to record recurring events. The idea was to keep track of the last time an event occurred, especially things that occur at very low frequencies such as over months or years. I’m curious if this data can be useful and provide insights on some aspects of my life."
 		},
 		{
 			"subheader": "Job Hunt Tracker",
+			"image": "https://i.imgur.com/5xotyWr.gif",
+			"width": "85%",
 			"text": "Implemented another list application to keep track of all the jobs I applied to. This is to organize, track my job applying rate, and track their status. The job information stored is the job title, city, province, date applied, and status of the application (applied, interview, rejection, offer)."
 		}
 	],

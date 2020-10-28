@@ -7,13 +7,17 @@
 		<v-row justify="center">
 			<v-col
 				cols="12"
-				md="8"
+				sm="12"
+				md="10"
+				lg="8"
 			>
 				<TrackingCam /> 
 			</v-col>
 			<v-col
 				cols="12"
-				md="8"
+				sm="12"
+				md="10"
+				lg="8"
 			>
 				<MyDashboard /> 
 			</v-col>

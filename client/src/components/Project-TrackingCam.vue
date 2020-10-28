@@ -1,6 +1,6 @@
 <template>
-	<v-card elevation=5>
-		<v-card-title class="text-h4 font-weight-bold">
+	<v-card elevation=5 class="text-justify">
+		<v-card-title class="text-left text-h4 font-weight-bold">
 			{{ this.items.title }}
 			<v-spacer></v-spacer>
 			<v-btn
@@ -64,6 +64,7 @@
 				<div
 					v-for="item in this.items.implementation"
 					:key="item.subheader"
+					class="ma-2"
 					>
 					<v-card-subtitle class="text-h6">
 						{{ item.subheader }}
