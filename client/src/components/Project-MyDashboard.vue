@@ -4,7 +4,7 @@
 			{{ this.items.title }}
 			<v-spacer></v-spacer>
 			<v-btn
-				href="https://glacial-hamlet-38268.herokuapp.com/"
+				href="https://my-dashboard-demo.herokuapp.com/"
 				target="_blank"
 				text
 				outlined
