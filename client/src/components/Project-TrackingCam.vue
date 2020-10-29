@@ -49,8 +49,8 @@
 		<v-expand-transition>
 			<div v-show="show">
 				<div class="d-flex pt-5 justify-space-around">
-					<img width="35%" src="https://i.imgur.com/06eogzO.png" alt="" />
-					<img width="35%" src="https://i.imgur.com/k0HsudF.jpg" alt="" />
+					<img width="25%" src="https://i.imgur.com/k0HsudF.jpg" alt="" />
+					<img width="25%" src="https://i.imgur.com/06eogzO.png" alt="" />
 				</div>
 				<v-card-subtitle class="text-h5 text-uppercase font-weight-bold">
 					Motivation	

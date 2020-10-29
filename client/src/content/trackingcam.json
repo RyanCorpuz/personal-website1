@@ -4,7 +4,7 @@
 	"motivation": "I have always been a participant in various action sports and by extension, the videos athletes make to showcase their skills. In order to film various actions, it requires another individual to follow and film, which introduces a multitasking issue for the filmer, e.g. riding close to the target, focusing on their own riding while focusing on where the target is, and ensuring the camera is recording the target without missing a moment. So I thought that if you could have a camera that automatically follows the target, the filmer only needs to focus on his own riding and being close which greatly reduces the complexity of the task.",
 	"implementation": [
 		{
-			"subheader": "Clock App",
+			"subheader": "Input Video Stream and Processing",
 			"text": "Using composite video from a security camera, the signal goes through the builtin TV decoder chip on the Altera DE2 development board. The pixel stream goes through a series of color space converters to a final HSV formatted signal. The pixel is then filtered using a threshold range calculated from the average color of a range of pixels of the target captured during initialization. The pixel is then labeled with a 1 for passing the threshold and 0 for failing."
 		},
 		{

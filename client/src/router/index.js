@@ -27,6 +27,20 @@ Vue.use(VueRouter)
     component: Projects,
 	meta: {title: 'Projects'}
   },
+  {
+    path: '*',
+    name: 'Not Found',
+	redirect: '/'
+  },
+//  {
+//    path: '/demos/dashdemo',
+//    name: 'Dashboard Demo',
+//    // route level code-splitting
+//    // this generates a separate chunk (about.[hash].js) for this route
+//    // which is lazy-loaded when the route is visited.
+//    component: () => import(/* webpackChunkName: "about" */ '../views/demos/DashboardDemo.vue'),
+//	meta: {title: 'Dashboard Demo'}
+//  },
 ]
 
 const router = new VueRouter({
